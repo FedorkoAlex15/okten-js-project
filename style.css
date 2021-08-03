@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.users-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: aliceblue;
+    height: 100vh;
+
+
+}
+
+
+
+.userBlock{
+    width: 45%;
+    height: 100px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.userBlock h2{
+    text-align: center;
+}
+
+.userBlock a{
+    color: black;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+
+}
+
+.userBlock a:hover{
+    color: darkred;
+    text-decoration: underline;
+
+}
+
+
+/*Users Details Page*/
+
+
+.users-Details{
+    background-color: aliceblue;
+    padding: 35px;
+
+}
+
+.user-Details, .postBox{
+    font-size: 18px;
+    padding: 10px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+
+.postsBlock{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.postBlock{
+    width: 18%;
+    height: 100px;
+}
+
+
+.users-Details button {
+
+    box-shadow:inset 0px 0px 0px 0px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:7px;
+    border:1px solid #29668f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:10px 30px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    display: block;
+    margin: 30px auto;
+}
+.users-Details button:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+.users-Details button:active {
+    position:relative;
+    top:1px;
+}
+
+
+.postsBlock{
+    display: flex;
+    height: 300px;
+}
+.postBlock{
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+
+.postBlock a{
+    color: black;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+
+
+}
+
+.postBlock a:hover{
+    color: darkred;
+    text-decoration: underline;
+
+}
+
+
+/*Post Details*/
+
+.posts-Details{
+    background-color: aliceblue;
+    padding: 35px;
+}
