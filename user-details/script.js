@@ -28,15 +28,18 @@ bs: ${user.company.bs},
 const DetailsBtn = document.createElement('button')
 DetailsBtn.innerText = 'post of current user';
 DetailsBtn.onclick = () => {
-
+        postsBlock.innerHTML = ''
     fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
         .then(value => value.json())
         .then(value => {
 
             for (const post of value){
+
                 const postBlock = document.createElement('div')
                 const link = document.createElement('a')
+                // postsBlock.innerText = '';
                 postBlock.classList.add('postBlock')
+
                 postBlock.innerText = post.title
                 link.innerText = 'post-details'
 

@@ -1,22 +1,14 @@
 const url = new URL(location)
 const JSONPost = url.searchParams.get('post')
-
 const post = JSON.parse(JSONPost)
 
 const postsDetailsBlock = document.querySelector('.posts-Details')
-// const postDetailsBlock = document.createElement('div');
 const postBox = document.createElement('div');
 const commentsOfPost = document.createElement('div')
 const titleComment = document.createElement('h2')
 titleComment.innerText = 'Comments'
 
 commentsOfPost.classList.add('commentsOfPost');
-
-
-
-
-
-// postDetailsBlock.classList.add('post-Details');
 
 postBox.classList.add('postBox')
 
@@ -42,9 +34,6 @@ fetch(` https://jsonplaceholder.typicode.com/posts/${post.userId}/comments`)
 
 
     })
-
-// postDetailsBlock.append(postBox, titleComment, commentsOfPost)
-// postsDetailsBlock.append(postDetailsBlock)
 
 
 postsDetailsBlock.append(postBox, titleComment, commentsOfPost)
